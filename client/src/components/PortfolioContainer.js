@@ -5,6 +5,7 @@ import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
 import Footer from "./Footer";
+import "./styles/Root.css";
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState("About");
@@ -24,11 +25,12 @@ export default function PortfolioContainer() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <div>
-      {/* We are passing the currentPage from state and the function to update it */}
-      <Header currentPage={currentPage} handlePageChange={handlePageChange} />
-      {/* Here we are calling the renderPage method which will return a component  */}
-      {renderPage()}
+    <div className="mainFormat">
+      {/* Style that forces the footer to stay at the very bottom */}
+
+        <Header currentPage={currentPage} handlePageChange={handlePageChange} />
+        {renderPage()}
+
       <Footer />
     </div>
   );

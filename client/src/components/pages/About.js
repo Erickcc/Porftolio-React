@@ -1,22 +1,27 @@
 import React from 'react';
+import "../styles/About.css";
+import profilePicture from "../images/Profile-Picture.jpg";
+import Skills from '../Skills.js'
 
 export default function About() {
   return (
-    <div>
+    <div className="aboutContainer">
+      <div className="lhs">
+        <h1 className="title">Erick Contreras</h1>
+        <h2 className="subtitle">Full Stack Developer</h2>
+        <div className="cosmeticSubtitle"></div>
+        <p className="introduction">
+          Mechatronics Engineer, currently enrolled in a fullstack development course. I enjoy building web applications and to collaborate with people from all around the world!
+        </p>
 
-      <h1>Home Page</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
-        velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi
-        ac dui fermentum, sed luctus urna tincidunt. Etiam ut feugiat ex. Cras
-        non risus mi. Curabitur mattis rutrum ipsum, ut aliquet urna imperdiet
-        ac. Sed nec nulla aliquam, bibendum odio eget, vestibulum tortor. Cras
-        rutrum ligula in tincidunt commodo. Morbi sit amet mollis orci, in
-        tristique ex. Donec nec ornare elit. Donec blandit est sed risus feugiat
-        porttitor. Vestibulum molestie hendrerit massa non consequat. Vestibulum
-        vitae lorem tortor. In elementum ultricies tempus. Interdum et malesuada
-        fames ac ante ipsum primis in faucibus.
-      </p>
+      </div>
+      <div className="mid"><img src={profilePicture} width="100%" height="100%" alt="Profile"/></div>
+      <div className="rhs">
+        <div className="rhsTitle">Languages</div>
+        <Skills />
+      </div>
+
+      <div className="projectsIntro">Take a look at my recent projects!</div>
     </div>
   );
 }

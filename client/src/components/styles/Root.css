@@ -1,0 +1,8 @@
+.mainFormat{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    min-height: 100%;
+}

@@ -1,4 +1,5 @@
 import React from "react";
+import "./styles/Header.css";
 
 function Navigation({ name, currentPage, handlePageChange }) {
   // const [currentFontColor, setCurrentFontColor] = useState("white");
@@ -8,15 +9,22 @@ function Navigation({ name, currentPage, handlePageChange }) {
       color: "black",
       fontSize: 20,
       backgroundColor: 'Gainsboro',
+      borderRadius: "5px",
+      textAlign: "center"
     },
     inactive:{
       color: "white",
       fontSize: 20,
+      borderRadius: "5px",
+      textAlign: "center"
+    },
+    bg: {
+      width: "10%", 
     }
   };
 
   return (
-    <li className="nav-item" style={styles.bg}>
+    <li className="li" style={styles.bg}>
       <a
         style={currentPage === `${name}` ? styles.active: styles.inactive}
         href={`#${name}`}

@@ -2,23 +2,9 @@ import React from "react";
 import FooterElements from "./FooterElements";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import "./styles/Footer.css"
 
 function Footer() {
-  const styles = {
-    ul: {
-      textAlign: "center",
-    },
-    bottomContainer: {
-      width: '100%',
-      height: 70,
-      // backgroundColor: '#EE5407',
-      justifyContent: 'center',
-      alignItems: 'center',
-      position: 'absolute', //Here is the trick
-      bottom: 0, //Here is the trick
-    },
-  };
-
   const footerSection = [
     {
       url: "https://github.com/Erickcc",
@@ -33,8 +19,8 @@ function Footer() {
   ];
 
   return (
-    <footer style={styles.bottomContainer}>
-      <ul style={styles.ul}>
+    <footer className="bottomContainer">
+      <ul className="ul">
         {footerSection.map((footerElement) => (
           <FooterElements
             url={footerElement.url}

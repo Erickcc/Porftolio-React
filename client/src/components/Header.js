@@ -1,13 +1,6 @@
 import React from "react";
 import Navigation from "./Navigation";
-import './styles/Header.css';
-
-const styles = {
-  navStyle: {
-    flex: 1,
-    justifyContent: "space-evenly",
-  },
-};
+import "./styles/Header.css";
 
 function Header({ currentPage, handlePageChange }) {
   const navSections = [
@@ -31,23 +24,15 @@ function Header({ currentPage, handlePageChange }) {
 
   return (
     <header className="header">
-      <ul className="nav nav-tabs">
-        <div className="container-fluid nav-bar-custom">
-          <nav className="navbar navbar-expand-lg navbar-light">
-            <div className="collapse navbar-collapse">
-              <ul className="navbar-nav" style={styles.navStyle}>
-                {navSections.map((navSection) => (
-                  <Navigation
-                    name={navSection.name}
-                    currentPage={currentPage}
-                    handlePageChange={handlePageChange}
-                    key={navSection.id}
-                  />
-                ))}
-              </ul>
-            </div>
-          </nav>
-        </div>
+      <ul className="ul">
+        {navSections.map((navSection) => (
+          <Navigation
+            name={navSection.name}
+            currentPage={currentPage}
+            handlePageChange={handlePageChange}
+            key={navSection.id}
+          />
+        ))}
       </ul>
     </header>
   );
