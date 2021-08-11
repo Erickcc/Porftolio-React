@@ -2,6 +2,8 @@ import React from 'react';
 import "../styles/About.css";
 import profilePicture from "../images/Profile-Picture.jpg";
 import Skills from '../Skills.js'
+import { GrTechnology } from 'react-icons/gr';
+import Technologies from '../Technologies';
 
 export default function About() {
   return (
@@ -21,7 +23,11 @@ export default function About() {
         <Skills />
       </div>
 
-      <div className="projectsIntro">Take a look at my recent projects!</div>
+      <div className="projectsIntro">Technologies <GrTechnology /></div>
+
+      <Technologies />
+
     </div>
   );
 }
+

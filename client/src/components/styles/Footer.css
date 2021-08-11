@@ -1,4 +1,4 @@
-.ul {
+.ulFooter {
   text-align: center;
 }
 
@@ -13,13 +13,13 @@
   
 }
 
-.li {
+.liFooter {
     display: inline;
     list-style-type: none;
     font-size: 50px;
     margin: 0 20px;
 }
 
-.a{
+.aFooter{
     color: #152235;
 }

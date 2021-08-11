@@ -24,7 +24,7 @@ function Header({ currentPage, handlePageChange }) {
 
   return (
     <header className="header">
-      <ul className="ul">
+      <ul className="ulHeader">
         {navSections.map((navSection) => (
           <Navigation
             name={navSection.name}

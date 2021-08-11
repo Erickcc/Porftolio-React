@@ -1,12 +1,11 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import './styles/Footer.css';
 
-function FooterElements({ url, icon }) {
+function FooterElements({ url, Icon }) {
   return (
-    <li className="li">
-      <a className="a" href={`${url}`} target="_blank" rel="noreferrer">
-        <FontAwesomeIcon icon={icon} />
+    <li className="liFooter">
+      <a className="aFooter" href={`${url}`} target="_blank" rel="noreferrer">
+        <Icon />
       </a>
     </li>
   );

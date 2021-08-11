@@ -24,7 +24,7 @@ function Navigation({ name, currentPage, handlePageChange }) {
   };
 
   return (
-    <li className="li" style={styles.bg}>
+    <li className="liHeader" style={styles.bg}>
       <a
         style={currentPage === `${name}` ? styles.active: styles.inactive}
         href={`#${name}`}

@@ -7,11 +7,11 @@
     flex-shrink: 0;
 }
 
-.ul{
+.ulHeader{
     display: flex;
     justify-content: center;
 }
 
-.li{
+.liHeader{
     display: inline-block;
 }
