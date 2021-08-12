@@ -1,16 +1,34 @@
 import React from "react";
-import './styles/Portfolio.css'
-import { AiFillGithub } from 'react-icons/ai';
+import "./styles/Portfolio.css";
+import { AiFillGithub } from "react-icons/ai";
 
-function ProjectElement({name, url, img}) {
+function ProjectElement({ name, live, url, img }) {
   return (
-      <div className="projectContainer">
-        <div className="projectImageContainer">
-          <img src={img} alt={name} className="projectImage"></img>
-          <div className="projectTitle">{name} <a href={url} className="projectHyperlink"><AiFillGithub /></a></div>
-                    
-        </div>
+    <div className="projectContainer">
+      <div className="projectImageContainer">
+        <img src={img} alt={name} className="projectImage"></img>
+        {live.length === 0 ? (
+          <div className="projectTitle">{name} </div>
+        ) : (
+          <a
+            href={live}
+            target="_blank"
+            rel="noreferrer"
+            className="projectTitle"
+          >
+            {name}
+          </a>
+        )}
+        <a
+          href={url}
+          target="_blank"
+          rel="noreferrer"
+          className="projectHyperlink"
+        >
+          <AiFillGithub />
+        </a>
       </div>
+    </div>
   );
 }
 

@@ -8,31 +8,45 @@ function Navigation({ name, currentPage, handlePageChange }) {
     active: {
       color: "black",
       fontSize: 20,
-      backgroundColor: 'Gainsboro',
+      backgroundColor: "Gainsboro",
       borderRadius: "5px",
-      textAlign: "center"
+      textAlign: "center",
     },
-    inactive:{
+    inactive: {
       color: "white",
       fontSize: 20,
       borderRadius: "5px",
-      textAlign: "center"
+      textAlign: "center",
     },
     bg: {
-      width: "10%", 
-    }
+      width: "10%",
+    },
   };
 
   return (
     <li className="liHeader" style={styles.bg}>
-      <a
-        style={currentPage === `${name}` ? styles.active: styles.inactive}
-        href={`#${name}`}
-        onClick={() => {handlePageChange(name)}}
-        className="hyperlinkHeader"
-      >
-        {name}
-      </a>
+      {name === "Resume" ? (
+        <a
+          style={currentPage === `${name}` ? styles.active : styles.inactive}
+          href="https://drive.google.com/file/d/1XEMiw4pSfOc9n8f6l4Lzx1z2_H4JFITm/view?usp=sharing"
+          target="_blank"
+          rel="noreferrer"
+          className="hyperlinkHeader"
+        >
+          {name}
+        </a>
+      ) : (
+        <a
+          style={currentPage === `${name}` ? styles.active : styles.inactive}
+          href={`#${name}`}
+          onClick={() => {
+            handlePageChange(name);
+          }}
+          className="hyperlinkHeader"
+        >
+          {name}
+        </a>
+      )}
     </li>
   );
 }

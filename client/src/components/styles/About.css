@@ -73,7 +73,7 @@
     text-align: center;
 }
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1600px) {
     .aboutContainer {
       /* background-color: lightblue; */
       max-width: 1200px;

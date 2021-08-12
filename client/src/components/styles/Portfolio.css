@@ -27,12 +27,12 @@
     transition-duration: 0.5s;
 }
 
-.projectImageContainer:hover > .projectImage{
+.projectImageContainer:hover  .projectImage{
     filter: brightness(0.1);
     transition-duration: 0.5s;
 }
 
-.projectImageContainer:hover > .projectTitle{
+.projectImageContainer:hover  .projectTitle{
     display: inline-block;
 }
 
@@ -44,15 +44,28 @@
     display:none;
     position: absolute;
     font-size: 40px;
-    top: 25%;
+    top: 10%;
     left: 10%;
     color: aliceblue;
+    text-decoration: none;
+}
+
+.projectTitle:hover{
+    color: gold
 }
 
 .projectHyperlink{
     display:none;
+    position: absolute;
+    font-size: 40px;
+    bottom: 10%;
+    right: 10%;
     color: aliceblue;
     text-decoration: none;
+}
+
+.projectHyperlink:hover{
+    color: gold
 }
 
 
