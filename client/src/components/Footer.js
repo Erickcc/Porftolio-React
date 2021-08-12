@@ -22,7 +22,7 @@ function Footer() {
     {
       url: "mailto:erickcc06@gmail.com",
       Icon: SiGmail,
-      id: 2,
+      id: 3,
     }
   ];
 

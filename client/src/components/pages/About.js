@@ -17,7 +17,7 @@ export default function About() {
         </p>
 
       </div>
-      <div className="mid"><img src={profilePicture} width="100%" height="100%" alt="Profile"/></div>
+      <div className="mid"><img src={profilePicture} className="profileImage" alt="Profile"/></div>
       <div className="rhs">
         <div className="rhsTitle">Languages</div>
         <Skills />

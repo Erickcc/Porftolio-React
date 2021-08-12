@@ -29,7 +29,7 @@ function Navigation({ name, currentPage, handlePageChange }) {
         style={currentPage === `${name}` ? styles.active: styles.inactive}
         href={`#${name}`}
         onClick={() => {handlePageChange(name)}}
-        className={currentPage === `${name}` ? "nav-link active" : "nav-link"}
+        className="hyperlinkHeader"
       >
         {name}
       </a>
