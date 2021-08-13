@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles/Portfolio.css";
 import { AiFillGithub } from "react-icons/ai";
-
+// https://www.codegrepper.com/code-examples/javascript/how+to+load+the+images+from+the+website+dynamically+in+react
 function ProjectElement({ name, live, url, img }) {
   return (
     <div className="projectContainer">
