@@ -8,6 +8,7 @@ import employeeTracker from "../../assets/employee-tracker2.jpg";
 import cryptoInvestor from "../../assets/crypto-web2.jpg";
 import "./ProjectList.css";
 
+// Maps over the project variable to display all the projects
 function ProjectList() {
   const projects = [
     {

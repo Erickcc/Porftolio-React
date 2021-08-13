@@ -2,6 +2,7 @@ import React from "react";
 import HeaderItem from "../HeaderItem/HeaderItem.js";
 import "./Header.css";
 
+// Sets the layout for the header container and maps over headerSection to display all the elements in the header
 function Header({ currentPage, handlePageChange }) {
   const headerSections = [
     {

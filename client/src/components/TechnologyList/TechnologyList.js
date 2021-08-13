@@ -1,7 +1,8 @@
 import React from "react";
 import TechnologyElement from "../TechnologyElement/TechnologyElement";
 import "./TechnologyList.css"
-// node.js, mysql, jest, express, MongoDB, PWA, React, JWT
+
+// Maps over the technologies array to print a list of technologies in a container
 function TechnologyList() {
   const technologies = [
     {

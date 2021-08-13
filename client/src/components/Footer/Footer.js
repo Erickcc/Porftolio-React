@@ -5,6 +5,7 @@ import { AiFillLinkedin } from 'react-icons/ai';
 import { SiGmail } from 'react-icons/si';
 import "./Footer.css"
 
+// Sets the main container for the footer and maps over footerSection to display all our icons in the footer
 function Footer() {
   const footerSection = [
     {

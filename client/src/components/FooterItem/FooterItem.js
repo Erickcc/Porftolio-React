@@ -1,6 +1,7 @@
 import React from "react";
 import './FooterItem.css';
 
+// Display each list item as a hyperlink as its corresponding icon from react icons
 function FooterItem({ url, Icon }) {
   return (
     <li className="liFooter">

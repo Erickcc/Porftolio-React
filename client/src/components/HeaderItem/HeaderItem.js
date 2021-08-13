@@ -1,6 +1,8 @@
 import React from "react";
 import "./HeaderItem.css";
 
+// Displays each hyperlink as a list item. If the item is "Resume" then it doesnt call the handlePage function
+// Instead, it just sends to an outer link from google drive that contains the pdf file for the cv
 function HeaderItem({ name, currentPage, handlePageChange }) {
   const styles = {
     active: {

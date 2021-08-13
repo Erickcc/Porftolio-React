@@ -1,8 +1,8 @@
 import React from "react";
 import "./TechnologyElement.css"
 import { BsFillPlusSquareFill } from 'react-icons/bs';
-// node.js, mysql, jest, express, MongoDB, PWA, React, JWT
 
+// Container that has text inside it as well as an icon that displays a technology
 function TechnologyElement({name}) {
 
 

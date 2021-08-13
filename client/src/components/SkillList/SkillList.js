@@ -1,6 +1,7 @@
 import React from "react";
 import SkillElement from "../SkillElement/SkillElement";
 
+// Map over the skills array to display all the skills
 function SkillList() {
   const skills = [
     {

@@ -1,7 +1,10 @@
 import React from "react";
 import "./ProjectElement.css";
 import { AiFillGithub } from "react-icons/ai";
-// https://www.codegrepper.com/code-examples/javascript/how+to+load+the+images+from+the+website+dynamically+in+react
+
+// Display each project, each project has an image, when hovering over the image the user can click on the project
+// title to go to the url where the project is running or if they click on the github logo they will be moved to
+// the github repo. If the project has no live url, then the title is plain text
 function ProjectElement({ name, live, url, img }) {
   return (
     <div className="projectContainer">

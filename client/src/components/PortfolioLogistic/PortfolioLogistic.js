@@ -7,6 +7,8 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import "./PortfolioLogistic.css";
 
+// Core component of the webpage
+// Displays the header, footer and handles the logic that manages which "main part" of the page it must display
 export default function PortfolioLogistic() {
   const [currentPage, setCurrentPage] = useState("About");
 
