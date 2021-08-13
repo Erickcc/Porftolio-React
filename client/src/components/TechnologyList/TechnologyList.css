@@ -1,0 +1,8 @@
+.technologyContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: slategray;
+  margin-top: 20px;
+}

@@ -1,0 +1,27 @@
+.liHeader {
+  display: inline-block;
+  width: 10%;
+}
+
+.hyperlinkHeader {
+  width: auto;
+  text-decoration: none;
+  padding: 5px 10px 5px 10px;
+}
+
+.hyperlinkHeader:hover {
+  border: white 2px solid;
+  border-radius: 3px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .liHeader {
+    margin: 0 30px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .liHeader {
+    margin: 0 30px;
+  }
+}

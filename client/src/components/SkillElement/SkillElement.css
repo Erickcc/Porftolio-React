@@ -1,0 +1,23 @@
+.skillTitle {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.barPercentage {
+  color: rgb(155, 118, 24);
+  padding-left: 5px;
+}
+
+.outerSquare {
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background-color: gainsboro;
+}
+
+.innerSquare {
+  /* width: 50%; */
+  height: 10px;
+  border-radius: 5px;
+  background-color: goldenrod;
+}

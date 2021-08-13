@@ -1,0 +1,10 @@
+.liFooter {
+    display: inline;
+    list-style-type: none;
+    font-size: 50px;
+    margin: 0 20px;
+}
+
+.aFooter{
+    color: #152235;
+}

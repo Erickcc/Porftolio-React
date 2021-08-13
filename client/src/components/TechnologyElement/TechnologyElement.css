@@ -1,0 +1,19 @@
+.techOuterSquare {
+  width: 40%;
+  height: 40px;
+  background-color: #152235;
+  align-self: center;
+  padding: 5px 0;
+  margin: 15px 0;
+}
+
+.techInnerSquare {
+  width: 100%;
+  color: white;
+  padding-left: 10px;
+}
+
+.techIcon {
+  color: goldenrod;
+  margin-right: 10px;
+}

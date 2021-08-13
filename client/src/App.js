@@ -1,6 +1,6 @@
 import React from 'react';
-import PortfolioContainer from "./components/PortfolioContainer";
+import PortfolioLogistic from "./components/PortfolioLogistic/PortfolioLogistic";
 
-const App = () => <PortfolioContainer />;
+const App = () => <PortfolioLogistic />;
 
 export default App;

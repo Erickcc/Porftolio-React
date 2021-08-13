@@ -1,0 +1,70 @@
+.projectContainer {
+  width: 45%;
+  margin: 30px 20px;
+  border: solid 4px SlateGray;
+}
+
+.projectImageContainer {
+  position: relative;
+}
+
+.projectImage {
+  width: 100%;
+  filter: brightness(1);
+  transition-duration: 0.5s;
+}
+
+.portfolioTitle {
+  text-align: center;
+  font-size: 50px;
+}
+
+.projectTitle {
+  display: none;
+  position: absolute;
+  font-size: 40px;
+  top: 10%;
+  left: 10%;
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.projectHyperlink {
+  display: none;
+  position: absolute;
+  font-size: 40px;
+  bottom: 10%;
+  right: 10%;
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.projectImageContainer:hover .projectImage {
+  filter: brightness(0.1);
+  transition-duration: 0.5s;
+}
+
+.projectImageContainer:hover .projectTitle {
+  display: inline-block;
+}
+
+.projectImageContainer:hover .projectHyperlink {
+  display: inline-block;
+}
+
+.projectTitle:hover {
+  color: gold;
+}
+
+.projectHyperlink:hover {
+  color: gold;
+}
+
+@media only screen and (max-width: 1050px) {
+  /* .portfolioContainer{
+        background-color: lightpink;
+    } */
+  .projectContainer {
+    width: 100%;
+  }
+}
